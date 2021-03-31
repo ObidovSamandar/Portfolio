@@ -1,5 +1,4 @@
 $(document).ready(()=>{
-    
     // ===HAMBURGER BUTTON===
     $('.hamburger__bar').on('click',()=>{
         $('.ham__bars:nth-child(1),.ham__bars:nth-child(3),.ham__bars:nth-child(2),.res__header').toggleClass('active')
