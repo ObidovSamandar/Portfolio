@@ -1,0 +1,154 @@
+
+.right__element{
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    transform: rotate(-15deg);
+    background-color: $primaryBg-color;
+    top: -50%;
+    left: -83%;
+}
+
+
+.container-fluid{
+    height: 100vh;
+    position: relative;
+}
+.row{
+    height: 100%;
+    padding: 0 45px;
+}
+.home__wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.person__avatar{
+    border-radius: 30px;
+    box-shadow: 0 0 7px #000000e6;
+    height: calc(100vh - 80px);
+    background-color: $mainBg-color;
+    background:url(http://slimhamdi.net/tunis/dark/img/2.jpg) no-repeat center center/cover;
+}
+
+
+.person__info{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 120px;
+    &__nameJob{
+       h1{
+           margin: 18px 0 10px;
+           font-size: 47px;
+           font-family: $headers-font;
+           line-height: 1.2;
+           text-transform: uppercase;
+           position: relative;
+       }
+       h1 span{
+           color: $primaryBg-color;
+       }
+       p{
+           margin-bottom: 60px;
+           margin-top: 20px;
+       }
+    }
+
+    &__changeBoxes{
+        ul{
+            margin-left: 100px;
+           li{
+                @include iconBox();
+                position: relative;
+
+                a{
+                    width: 100%;
+                    height: 100%;
+                    line-height: 50px;
+                    text-align: center;
+                    border-radius: 50%;
+                }
+           }
+           .inner__text{
+            position: absolute;
+            height: 100%;
+            line-height: 48px;
+            width: 0px;
+            right: 5px;
+            border-radius:35px;
+            padding-left: 20px;
+            background-color: $primaryBg-color;
+            z-index: -1;
+            opacity: 0;
+            transition: .5s;
+            overflow-x: hidden;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+            li:hover .inner__text{
+                opacity: 1;
+                width: 120px;
+            }   
+            li:nth-child(3):hover .inner__text{
+                width: 155px;
+            }
+            li:nth-child(4):hover .inner__text{
+                width: 140px;
+            }
+            li:nth-child(5):hover .inner__text{
+                width: 115px;
+            }
+            li:hover,.active__link{
+                background-color: $primaryBg-color;
+            }
+
+        }
+    }
+}
+
+
+.res__header{
+   display: none;
+}
+.hamburger__bar{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    background-color: $icon-color;
+    right: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 20;
+    .ham__bars{
+        height: 4px;
+        position: absolute;
+        width: 35px;
+        background-color: $white-color;
+        transition: .5s;
+        left: 7px;
+        border-radius: 4px;
+    }
+    .ham__bars:nth-child(1){
+        top: 13px;
+    }
+    .ham__bars:nth-child(2){
+        top: 23px;
+    }
+    .ham__bars:nth-child(3){
+        top: 33px;
+    }
+    .ham__bars:nth-child(1).active{
+        top: 23px;
+        transform: rotate(45deg);
+    }
+    .ham__bars:nth-child(3).active{
+        top: 23px;
+        transform: rotate(-45deg);
+    }
+    .ham__bars:nth-child(2).active{
+        opacity: 0;
+    }
+}
+

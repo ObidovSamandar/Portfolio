@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primaryBg-color:#FFB400;
+$mainBg-color:#111111;
+$white-color:#FFF;
+$iconBg-color:#272626;
+$icon-color:#2b2a2a;
+$black-color:#000;
+$text-font:'Open Sans', sans-serif;
+$headers-font:'Poppins', sans-serif;
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: $mainBg-color;
+    font-family: $text-font;
+    line-height: 1.6;
+    color: $white-color;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $white-color;
+}
+
+img{
+    width: 100%;
+}
+
+@import "mixins";
+@import "btnClass";
+@import "home";
+@import "about";
+@import "portfolio";
+
+@media(min-width:992px){
+    .person__avatar.about__person__avatar{
+        display: none !important;
+     }
+}
+
+
+@media(max-width:992px){
+    .right__element{
+        display: none;
+    }
+    .row{
+        padding: 55px 45px;
+    }
+
+    .person__avatar{
+        width: 270px;
+        height: 270px;
+        background: url(http://slimhamdi.net/tunis/dark/img/img-mobile.jpg) no-repeat center center/cover;
+        border-radius: 50%;
+        border:4px solid #252525
+    }
+    .person__info{
+        padding: 0;
+        max-height: 310px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            font-size: 29px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        p{
+            font-size: 15px;
+            padding: 0 90px;
+            margin: 15px 0 40px 0;
+        }
+    }
+    .person__info__changeBoxes{
+        display: none;
+    }
+
+    .person__img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .res__header{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #252525;
+        z-index: 100;
+        left: -100%;
+        transition: .4s;
+    }
+    .res__header.active{
+        left: 0;
+    }
+
+    .resHeaderList{
+        width: 90%;
+        margin: 0 auto;
+
+        li{
+            margin-bottom: 30px;
+            font-size: 26px;
+            text-transform: uppercase;
+            padding: 5px 0;
+            cursor: pointer;
+            border-bottom: 1px solid  #363535;
+            a i{
+                margin-right: 20px;
+            }
+            a{
+                transition:.3s;
+            }
+        }
+        li a.active__link, li a:hover{
+            color: $primaryBg-color;
+        }
+    }
+
+
+    // ===ABOUT CONTENT===
+    .row.personal__info__main_wrapper,.row.my__skills__wrapper,.row.education__infos{
+        padding: 0;
+    }
+    .row.about__wrapper{
+        padding: 65px 0;
+    }
+    .about__title{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .numbersSay{
+        margin-top: 30px;
+    }
+
+    .education__list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 40px;
+    }
+    .about__person__avatar{
+       display: none;
+    }
+}
+
+@media(max-width:768px){
+    .numbersSay{
+        padding: 20px;
+    }
+    .my__skills__wrapper{
+        .my__skills__list{
+            grid-template-columns: repeat(2,1fr);
+            justify-items: initial;
+            padding-left: 40px;
+          
+        }
+    }
+    .about__person__avatar{
+       display: none;
+    }
+    .row.about__wrapper{
+        padding: 45px 0;
+    }
+}
+
+@media(max-width:576px){
+    .person__info{
+        h1{
+            font-size: 18px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        p{
+            font-size: 15px;
+            padding: 0;
+            margin: 15px 0 40px 0;
+        }
+    }
+
+    .hamburger__bar{
+        width: 40px;
+        height: 40px;
+        top: 25px;
+        right: 25px;
+        .ham__bars{
+            width: 30px;
+            left: 5px;
+        }
+        .ham__bars:nth-child(1){
+            top: 9px;
+        }
+        .ham__bars:nth-child(2){
+            top: 18px;
+        }
+        .ham__bars:nth-child(3){
+            top: 27px;
+        }
+        .ham__bars:nth-child(1).active{
+            top: 18px;
+            transform: rotate(45deg);
+        }
+        .ham__bars:nth-child(3).active{
+            top: 18px;
+            transform: rotate(-45deg);
+        }
+        .ham__bars:nth-child(2).active{
+            opacity: 0;
+        }
+    }
+
+    .resHeaderList{
+        width: 80%;
+        margin: 0 auto;
+
+        li{
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+    }
+
+
+
+    .bgprimaryText{
+        display: none;
+    }
+
+    .primary__title{
+        font-size: 28px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        text-align: left;
+        padding-left: 25px;
+    }
+    .row.about__wrapper{
+        padding: 0;
+    }
+    .my__skills__wrapper{
+        .my__skills__list{
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+            padding-left: 0;
+          
+        }
+    }
+    .about__title{
+        background-color: #252525;
+        padding: 0;
+        position: fixed;
+        z-index: 20;
+        border-bottom: 1px solid #333;
+        left: 0;
+        width: 100%;
+    }
+
+    .personal__details{
+        margin-top: 115px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__person__avatar{
+        display: block;
+        margin: 10px auto 20px auto;
+    }
+    .personal_info_list1{
+        margin-right: 20px;
+    }
+    .personalInfomation__lists{
+        padding: 0 !important;
+        margin-left: 5px;
+    }
+    .numbersSay{
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

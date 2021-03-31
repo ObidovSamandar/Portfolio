@@ -1,0 +1,168 @@
+
+#StickyChangeBoxes{
+    position: fixed;
+    top: 21%;
+    right: 45px;
+    z-index: 100;
+}
+
+.about__title{
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+.personal__details{
+    h3{
+        font-size: 26px;
+        padding-bottom: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .personalInfomation__lists{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding: 0 25px 0 0px;
+        ul{
+            li{
+                margin-bottom: 20px;
+                font-size: 15px;
+
+                span{
+                    opacity: .8;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+
+.numbersSay{
+    padding: 20px 0;
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+
+        .numberSay__box{
+            padding: 20px 30px 25px 40px;
+            border-radius: 5px;
+            border: 1px solid #252525;
+            position: relative;
+            z-index: 0;
+
+            h4{
+                font-size: 56px;
+                color: $primaryBg-color;
+                font-family: $headers-font;
+            }
+            p{
+                padding-left: 45px;
+                text-transform: uppercase;
+                position: relative;
+                font-size: 15px;
+            }
+            p::after{
+                position: absolute;
+                content: '';
+                width: 40px;
+                height: 1px;
+                background-color: #777;
+                top: 10px;
+                left: -5px;
+            }
+
+        }
+    }
+}
+
+.divider{
+    border: 0.4px solid #777;
+    width: 400px;
+    margin: 35px auto;
+    opacity: 0.4;
+}
+
+.my__skills__wrapper{
+    .my__skills__list{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 20px;
+        grid-row-gap: 90px;
+        margin-bottom: 60px;
+        .skill__box{
+            width: 170px  !important;
+            height: 170px  !important;
+            position: relative;
+            .skill__title{
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: 600;
+            }
+        }
+    }
+   
+}
+.ldBar-label {
+    font-size: 1.6em; 
+    color: $white-color;
+}
+
+
+.education__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 40px;
+    .edu__list__item{
+        display: flex;
+        padding: 45px 0;
+        .edu__icon{
+            position: relative;
+            i.fa.fa-graduation-cap{
+                background-color: $primaryBg-color;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+        }
+        .edu__icon::before{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 50px;
+            background-color: #777;
+            left: 50%;
+            bottom: -20px;
+        }
+        .edu__infos{
+            padding-left: 20px;
+
+            .year{
+                color: $white-color;
+                font-size: 12px;
+                padding: 1px 10px;
+                margin-bottom: 12px;
+                border-radius: 20px;
+                font-weight: 600;
+                opacity: .8;
+                background-color: #252525;
+                display: inline-block;
+            }
+
+            .location{
+                font-size: 18px;
+                margin: 7px 0 10px;
+            }
+        }
+    }
+}

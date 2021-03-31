@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./plugins/loader.js/loading-bar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>About Me</title>
+</head>
+<body>
+
+    <div class="res__header">
+        <div class="hamburger__bar">
+            <span class="ham__bars"></span>
+            <span class="ham__bars"></span>
+            <span class="ham__bars"></span>
+        </div>
+
+        <ul class="resHeaderList">
+            <li><a href="#" class="active__link"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i> <span>About</span></a></li>
+            <li><a href="#"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+            <li><a href="#"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            <li><a href="#"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+        </ul>
+    </div>
+
+
+        <!-- ===PERSON INFO CHANGEBOXES=== -->
+        <div class="person__info__changeBoxes" id="StickyChangeBoxes">
+            <ul class="icon__boxList">
+                <li>
+                    <span class="inner__text">Home</span>
+                    <a href="./index.html" class="icon-box__link ">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li class="active__link">
+                    <span class="inner__text">About</span>
+                    <a href="./about.html" class="icon-box__link">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+                <li>    
+                    <span class="inner__text">Portfolio</span>
+                    <a href="./works.html" class="icon-box__link">
+                        <i class="fa fa-briefcase"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="inner__text">Contact</span>
+                    <a href="#" class="icon-box__link">
+                        <i class="fa fa-envelope-open"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="inner__text">Blog</span>
+                    <a href="#" class="icon-box__link">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ===ABOUT CONTENT=== -->
+        <div class="container">
+            <div class="row about__wrapper">
+                <div class="col-12 about__title">
+                    <h1 class="primary__title">About <span class="about__title__innner">Me</span></h1>
+                    <span class="bgprimaryText">Resume</span>
+                </div>
+            </div>
+            <div class="row personal__info__main_wrapper">
+               <div class="col-lg-6 personal__details" data-aos="fade-up">
+                   <h3>Personal Infos</h3>
+                   <div class="person__avatar about__person__avatar"></div>
+                   <div class="personalInfomation__lists">
+                        <ul class="personal_info_list1">
+                            <li><span>First Name: </span>Samandar</li>
+                            <li><span>Last Name: </span>Obidov</li>
+                            <li><span>Age: </span>19</li>
+                            <li><span>Nationality: </span>Uzbek</li>
+                        </ul>
+                        <ul class="personal_info_list2">
+                            <li><span>Address: </span>Uzbekistan, Tashkent</li>
+                            <li><span>Phone: </span>+998935186780</li>
+                            <li><span>Email: </span>samandarobidovfrd@gmail.com</li>
+                            <li><span>Languages: </span>English, Uzbek</li>
+                        </ul>
+                   </div>
+
+                   <a href="./index.html" class="btn">
+                        <span class="btn__text">Download CV</span>
+                        <span class="btn__icon"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+               </div>
+               <div class="col-lg-6 numbersSay" data-aos="fade-up">
+                   <div class="numbersSay__wrapper">
+                       <div class="numberSay__box">
+                            <h4><span class="counter">0</span><sup>+</sup></h4>
+                            <p>Year of <br> expreinece</p>
+                       </div>
+                       <div class="numberSay__box">
+                            <h4><span class="counter">4</span><sup>+</sup></h4>
+                            <p>Completed <br> Projects</p>
+                       </div>
+                       <div class="numberSay__box">
+                            <h4><span class="counter">0</span><sup>+</sup></h4>
+                            <p>Happy  <br> Customers</p>
+                       </div>
+                       <div class="numberSay__box">
+                            <h4><span class="counter">0</span><sup>+</sup></h4>
+                            <p>Awards <br> Won</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="divider"></div>
+            </div>
+
+            <div class="row my__skills__wrapper">
+                <div class="col-lg-12">
+                    <h3 class="primaryAboutTitle">My skills</h3>
+                    <div class="my__skills__list">
+                        <div id="skillBox1"  class="skill__box label-center" data-aos="fade-down-right"> 
+                            <span class="skill__title">HTML</span>
+                        </div>
+                        <div id="skillBox2"  class="skill__box label-center" data-aos="fade-down">
+                            <span class="skill__title">CSS</span>
+                        </div>
+                        <div id="skillBox3"  class="skill__box label-center" data-aos="fade-down-left">
+                            <span class="skill__title">Bootstrap</span>
+                        </div>
+                         <div id="skillBox4"  class="skill__box label-center" data-aos="fade-up-right">
+                            <span class="skill__title">SASS(SCSS)</span>
+                        </div>
+                        <div id="skillBox5"  class="skill__box label-center" data-aos="fade-up">
+                            <span class="skill__title">Javascript</span>
+                        </div>
+                        <div id="skillBox6"  class="skill__box label-center" data-aos="fade-up-left">
+                            <span class="skill__title">Jquery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row education__infos">
+                <div class="col-lg-12 education__wrapper">
+                    <h3 class="primaryAboutTitle" data-aos="flip-left">education</h3>
+
+                    <div class="education__list">
+                        <div class="edu__list__item" data-aos="flip-up">
+                            <div class="edu__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>                            
+                            <div class="edu__infos">
+                                <p class="year">Present</p>
+                                <p class="location">Bachelors Degree - Amity University Tashkent
+                                </p>
+                            </div>
+                        </div>
+                        <div class="edu__list__item" data-aos="flip-up">
+                            <div class="edu__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>                            
+                            <div class="edu__infos">
+                                <p class="year">2007</p>
+                                <p class="location">School Degree - XTVFFIDUM school
+                                </p>
+                            </div>
+                        </div>
+                        <div class="edu__list__item" data-aos="flip-up">
+                            <div class="edu__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>                            
+                            <div class="edu__infos">
+                                <p class="year">2016</p>
+                                <p class="location">Lyceum Degree - Turin Academic Lyceum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="./plugins/loader.js/loading-bar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./about.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
