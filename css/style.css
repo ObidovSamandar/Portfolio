@@ -447,7 +447,7 @@ h3.primaryAboutTitle {
 
 #StickyChangeBoxes {
   position: fixed;
-  top: 21%;
+  top: 35%;
   right: 45px;
   z-index: 100;
 }
@@ -632,7 +632,6 @@ h3.primaryAboutTitle {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  border: 1px solid red;
 }
 
 .projects__boxes a {
@@ -694,6 +693,86 @@ h3.primaryAboutTitle {
   height: 100%;
 }
 
+.projects__boxes a.pro__box:nth-child(5) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(6) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(7) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(8) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  grid-row: 6/9;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(9) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  grid-row: 6/9;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(10) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(11) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
+  height: 100%;
+}
+
+.projects__boxes a.pro__box:nth-child(12) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 3;
+  grid-row: 12/15;
+  height: 100%;
+}
+
 img {
   width: 100%;
 }
@@ -721,6 +800,106 @@ img {
 
 .projects__list {
   padding: 10px 0 55px 0;
+}
+
+.row.contacts__wrapper {
+  padding: 0;
+}
+
+.row.contacts__wrapper .contact__inner h3 {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.row.contacts__wrapper .contact__inner p {
+  margin-bottom: 25px;
+}
+
+.row.contacts__wrapper .main__contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__icon i {
+  font-size: 30px;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__icon i.fa.fa-envelope-open {
+  color: #FFB400;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__icon i.fa.fa-phone {
+  color: #000;
+  background-color: #FFB400;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__text {
+  padding-left: 25px;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__text h4 {
+  font-size: 15px;
+  line-height: 21px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.row.contacts__wrapper .main__contact__box .contact__text p {
+  font-weight: 600;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs {
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs input, .row.contacts__wrapper .col-lg-8.contact__inputs textarea {
+  border: none;
+  outline: none;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs input, .row.contacts__wrapper .col-lg-8.contact__inputs textarea {
+  border: 1px solid #111;
+  background-color: #252525;
+  color: #fff;
+  padding: 17px 20px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 15px;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs input:not(last-child) {
+  margin-right: 20px;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs input:focus, .row.contacts__wrapper .col-lg-8.contact__inputs textarea:focus {
+  border: 1px solid #FFB400;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs textarea {
+  width: 100%;
+  height: 170px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+.row.contacts__wrapper .col-lg-8.contact__inputs a i {
+  font-size: 25px !important;
+  line-height: 52px !important;
 }
 
 @media (min-width: 992px) {
@@ -838,6 +1017,9 @@ img {
   }
   .about__person__avatar {
     display: none;
+  }
+  .row.projects__list {
+    padding: 0;
   }
 }
 
@@ -965,6 +1147,76 @@ img {
   .numbersSay__wrapper {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .row.projects__list {
+    padding: 0 10px;
+    margin-top: 160px;
+  }
+  .projects__boxes {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    margin-bottom: 40px;
+  }
+  .projects__boxes a.pro__box:nth-child(1) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(2) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 280px;
+  }
+  .projects__boxes a.pro__box:nth-child(3) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 250px;
+  }
+  .projects__boxes a.pro__box:nth-child(4) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 460px;
+  }
+  .projects__boxes a.pro__box:nth-child(5) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(6) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(7) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(8) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 210px;
+  }
+  .projects__boxes a.pro__box:nth-child(9) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(10) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 215px;
+  }
+  .projects__boxes a.pro__box:nth-child(11) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(12) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .projects__boxes a.pro__box:nth-child(13) {
+    height: 250px;
+  }
+  .row.contacts__wrapper {
+    margin-top: 115px;
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
