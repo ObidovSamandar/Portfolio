@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     $('.counter').counterUp({
-        delay:970,
+        delay:950,
         time:4100
     })
  })
