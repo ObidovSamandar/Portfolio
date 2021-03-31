@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./plugins/loader.js/loading-bar.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
@@ -22,11 +20,10 @@
             </div>
 
             <ul class="resHeaderList">
-                <li><a href="#" class="active__link"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="#"><i class="fa fa-user"></i> <span>About</span></a></li>
-                <li><a href="#"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="#"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="#"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                <li><a href="./index.html" ><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="./about.html"><i class="fa fa-user"></i> <span>About</span></a></li>
+                <li><a href="./works.html" class="active__link"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="./contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
             </ul>
         </div>
 
@@ -53,28 +50,22 @@
                 </li>
                 <li>
                     <span class="inner__text">Contact</span>
-                    <a href="#" class="icon-box__link">
+                    <a href="./contact.html" class="icon-box__link">
                         <i class="fa fa-envelope-open"></i>
-                    </a>
-                </li>
-                <li>
-                    <span class="inner__text">Blog</span>
-                    <a href="#" class="icon-box__link">
-                        <i class="fa fa-comments"></i>
                     </a>
                 </li>
             </ul>
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row about__wrapper">
                 <div class="col-lg-12 about__title">
                     <h1 class="primary__title">My <span class="about__title__innner">Portfolio</span></h1>
                     <span class="bgprimaryText">Works</span>
                 </div>
             </div>
             <div class="row projects__list">
-                <div class="projects__list_wrapper col-lg-12">
+                <div class="projects__list_wrapper col-md-12">
                     <div class="projects__boxes">
                         <a href="https://obidovsamandar.github.io/WeatherAPP/" class="pro__box" target="_blank">
                             <div class="pro__img" data-caption="Weather App. Find current weather of any city.(used API, Responsive)">
@@ -93,16 +84,51 @@
                         </a>
                         <a href="https://obidovsamandar.github.io/Music-App/" class="pro__box" target="_blank">
                             <div class="pro__img" data-caption="Music App.(Used API,Responsive)">
-                                <img src="./imgs/musicAPP.png" alt="">
+                                <img src="./imgs/musicAPP.png" alt="Music APP">
                             </div>
                         </a>
-                        <a href="https://obidovsamandar.github.io/ToDoList/" target="_blank" class="pro__box">
-                            <div class="pro__img" data-caption="To Do List(Add,Delete,Add via Microphone(Speech Recognation-Eng), Responsive)">
-                                <img src="./imgs/todolist.png" class="imgPro" alt="TodoList img">
+                        <a href="https://sekucybersecurity.netlify.app/" class="pro__box" target="_blank">
+                            <div class="pro__img" data-caption="Cyber Security Website(Responsive)">
+                                <img src="./imgs/cyber.png" alt="Cyber Template">
                             </div>
                         </a>
-                        <a href="#" class="pro__box">
-                            <div class="pro__img" >
+                        <a href="https://glint-resume-w.netlify.app/" class="pro__box" target="_blank">
+                            <div class="pro__img"  data-caption="Glint Resume Website (Responsive)">
+                                <img src="./imgs/resume.png" alt="Resume Tempate">
+                            </div>
+                        </a>
+                        <a href="https://restantecommerce.netlify.app/" class="pro__box" target="_blank">
+                            <div class="pro__img" data-caption="Restant E-commerce (Responsive)">
+                                <img src="./imgs/restant.png" alt="Restant Template">
+                            </div>
+                        </a>
+                        <a href="https://obidovsamandar.github.io/Youtube-Clone/" target="_blank" class="pro__box">
+                            <div class="pro__img" data-caption="Youtube Clone.(Add videos via Admin Panel, Watch added videos.Unresponsive) ">
+                                <img src="./imgs/youtubeClone.png" class="imgPro" alt="YoutubeClone img">
+                            </div>
+                        </a>
+                        <a href="https://obidovsamandar.github.io/Youtube-Clone/admin.html" target="_blank" class="pro__box">
+                            <div class="pro__img" data-caption="Youtube Admin">
+                                <img src="./imgs/youtubeadmin.png" class="imgPro" alt="Youtube Admin img">
+                            </div>
+                        </a>
+                        <a href="https://obidovsamandar.github.io/Mini-authorization/" target="_blank" class="pro__box">
+                            <div class="pro__img" data-caption="Sign up and Sign In page. You can sign up and enter signed up account.(Unrepsonsive)">
+                                <img src="./imgs/miniAuth.png" class="imgPro" alt="TodoList img">
+                            </div>
+                        </a>
+                        <a href="https://landkitsite.netlify.app/" class="pro__box">
+                            <div class="pro__img" data-caption="LandKit Website (Responsive)">
+                                <img src="./imgs/landkit.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://chatwithjs.netlify.app/" class="pro__box" >
+                            <div class="pro__img" data-caption="Real Time Chat APP.Unresponsive">
+                                <img src="./imgs/RealTimeChat.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://obidovsamandar.github.io/ToDoList/" class="pro__box" >
+                            <div class="pro__img" data-caption="To Do List(Add, Delete, Add via Speech Recognition-eng. Responsive)">
                                 <img src="./imgs/todolist.png" alt="">
                             </div>
                         </a>
@@ -112,20 +138,8 @@
         </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-    <script src="./plugins/loader.js/loading-bar.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./plugins/sliphover.js/jquery.sliphover.js"></script>
-    <script>
-        $(document).ready(()=>{
-            $('.projects__boxes').sliphover({
-               "target":".pro__img",
-               "backgroundColor":"#FFB400",
-               "caption":"data-caption"
-            })
-        })
-    </script>
-    <script src="main.js"></script>
+    <script src="./works.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
