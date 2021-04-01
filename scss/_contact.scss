@@ -64,14 +64,14 @@
             border: 1px solid #111;
             background-color: #252525;
             color: #fff;
-            padding: 17px 20px;
+            padding: 17px 15px;
             margin-bottom: 30px;
             border-radius: 30px;
             transition: .3s;
             font-size: 15px;
         }
         input:not(last-child){
-            margin-right: 20px;
+            margin-right: 10px;
         }
         input:focus, textarea:focus{
             border: 1px solid $primaryBg-color;
