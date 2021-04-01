@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+        <div class="res__header">
+            <div class="hamburger__bar">
+                <span class="ham__bars"></span>
+                <span class="ham__bars"></span>
+                <span class="ham__bars"></span>
+            </div>
+
+            <ul class="resHeaderList">
+                <li><a href="./index.html" ><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="./about.html"><i class="fa fa-user"></i> <span>About</span></a></li>
+                <li><a href="./works.html" ><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="./contact.html" class="active__link"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ===PERSON INFO CHANGEBOXES=== -->
+        <div class="person__info__changeBoxes" id="StickyChangeBoxes">
+            <ul class="icon__boxList">
+                <li>
+                    <span class="inner__text">Home</span>
+                    <a href="./index.html" class="icon-box__link ">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="inner__text">About</span>
+                    <a href="./about.html" class="icon-box__link">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+                <li >    
+                    <span class="inner__text">Portfolio</span>
+                    <a href="./works.html" class="icon-box__link">
+                        <i class="fa fa-briefcase"></i>
+                    </a>
+                </li>
+                <li class="active__link">
+                    <span class="inner__text">Contact</span>
+                    <a href="./contact.html" class="icon-box__link">
+                        <i class="fa fa-envelope-open"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="row about__wrapper">
+                <div class="col-lg-12 about__title">
+                    <h1 class="primary__title">Get in <span class="about__title__innner">touch</span></h1>
+                    <span class="bgprimaryText">Contact</span>
+                </div>
+            </div>
+            <div class="row contacts__wrapper">
+                <div class="col-lg-4 contact__inner">
+                    <h3>Don't be shy</h3>
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+
+                    <div class="main__contact">
+                        <div class="main__contact__box">
+                            <div class="contact__icon">
+                                <i class="fa fa-envelope-open"></i>
+                            </div>
+                            <div class="contact__text">
+                                <h4>Mail me</h4>
+                                <p>samandarobidovfrd@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="main__contact__box">
+                            <div class="contact__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="contact__text">
+                                <h4>Call me</h4>
+                                <p><a href="tel:+998935186780">+998 93 518 67 80</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 contact__inputs">
+                    <div class="contact__inputs__header">
+                        <form action="mailto:samandarobidovfrd@gmail.com" method="post" enctype="text/plain">
+                            <input type="text" placeholder="YOUR NAME" name="name">
+                            <input type="email" placeholder="YOUR EMAIL" name="email">
+                            <input type="text" placeholder="YOUR SUBJECT" name="subject">
+                            <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                            <!-- <a href="#" class="btn contact__btn">
+                                <span class="btn__text">Send Message</span>
+                                <span class="btn__icon"><i class="fa fa-telegram"></i></span>
+                            </a> -->
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

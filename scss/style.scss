@@ -47,6 +47,7 @@ img{
 @import "home";
 @import "about";
 @import "portfolio";
+@import "contact";
 
 @media(min-width:992px){
     .person__avatar.about__person__avatar{
@@ -159,6 +160,10 @@ img{
     }
     .about__person__avatar{
        display: none;
+    }
+
+    .row.projects__list{
+        padding: 0;
     }
 }
 
@@ -292,5 +297,77 @@ img{
         &__wrapper{
             grid-template-columns: repeat(1,1fr);
         }
+    }
+
+
+    .row.projects__list{
+        padding: 0 10px;
+        margin-top: 160px;
+    }
+    .projects__boxes{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 25px;
+        margin-bottom:40px;
+        a.pro__box:nth-child(1){
+            grid-column: unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(2){
+            grid-column:unset;
+            grid-row:unset;
+            height: 280px;
+        }
+        a.pro__box:nth-child(3){
+            grid-column:unset;
+            grid-row:unset;
+            height: 250px;
+        }
+        a.pro__box:nth-child(4){
+            grid-column:unset;
+            grid-row:unset;
+            height: 460px;
+        }
+        a.pro__box:nth-child(5){
+            grid-column:unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(6){
+            grid-column:unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(7){
+            grid-column:unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(8){
+            grid-column:unset;
+            grid-row:unset;
+            height: 210px;
+        }
+        a.pro__box:nth-child(9){
+            grid-column:unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(10){
+            grid-column:unset;
+            grid-row:unset;
+            height: 215px;
+        }
+        a.pro__box:nth-child(11){
+            grid-column: unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(12){
+            grid-column: unset;
+            grid-row:unset;
+        }
+        a.pro__box:nth-child(13){
+            height: 250px;
+        }
+    }
+
+    .row.contacts__wrapper{
+        margin-top: 115px;
+        padding: 0 10px;
     }
 }
