@@ -85,7 +85,7 @@
                             </div>
                             <div class="contact__text">
                                 <h4>Call me</h4>
-                                <p>+99893 518 67 80</p>
+                                <p><a href="tel:+998935186780">+998 93 518 67 80</a></p>
                             </div>
                         </div>
                     </div>
@@ -93,21 +93,18 @@
 
                 <div class="col-lg-8 contact__inputs">
                     <div class="contact__inputs__header">
-                        <form>
-                            <input type="text" placeholder="YOUR NAME">
-                            <input type="email" placeholder="YOUR EMAIL">
-                            <input type="text" placeholder="YOUR SUBJECT">
+                        <form action="mailto:samandarobidovfrd@gmail.com" method="post" enctype="text/plain">
+                            <input type="text" placeholder="YOUR NAME" name="name">
+                            <input type="email" placeholder="YOUR EMAIL" name="email">
+                            <input type="text" placeholder="YOUR SUBJECT" name="subject">
+                            <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                            <!-- <a href="#" class="btn contact__btn">
+                                <span class="btn__text">Send Message</span>
+                                <span class="btn__icon"><i class="fa fa-telegram"></i></span>
+                            </a> -->
+                            <input type="submit" value="Send">
                         </form>
                     </div>
-                    <div class="contact__inputs__footer">
-                        <form>
-                            <textarea name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
-                        </form>
-                    </div>
-                    <a href="#" class="btn">
-                        <span class="btn__text">Send Message</span>
-                        <span class="btn__icon"><i class="fa fa-telegram"></i></span>
-                    </a>
                 </div>
             </div>
         </div>
