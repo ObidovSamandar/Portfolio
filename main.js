@@ -12,6 +12,9 @@ $(document).ready(()=>{
     
     })
     
+    $('#btn__message').on('click',()=>{
+       $('#_text,#_email,#_gmail,#_message').val(null)
+    })
 
 })
 function disableScroll() {
